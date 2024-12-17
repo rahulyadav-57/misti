@@ -19,6 +19,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "clean": "rm -fr dist docs/*",
+    "prepare": "yarn build",
     "build": "tsc && cp -R src/detectors/templates dist/detectors/",
     "postinstall": "yarn gen",
     "gen": "node scripts/genVersions.cjs",
